@@ -1,0 +1,24 @@
+{
+  "name": "fuel-to-the-fire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "foundation-sites": "^6.5.0-rc.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johncoffee/fuel-to-the-fire.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johncoffee/fuel-to-the-fire/issues"
+  },
+  "homepage": "https://github.com/johncoffee/fuel-to-the-fire#readme"
+}
