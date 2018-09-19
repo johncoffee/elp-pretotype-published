@@ -20,9 +20,13 @@
             font-family: 'Nixie One', cursive;
         }
 
-        @media screen and (min-width: 1023px) {
+        /*@media screen and (min-width: 39.99875em) and (min-height: 39em) {*/
+        @media screen and (min-width: 39.99875em) {
             .height-100-medium {
-                height: 100% !important;
+                height: 100%;
+            }
+            .grid-container.height-100-medium {
+                overflow: hidden;
             }
         }
 
@@ -40,14 +44,14 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#add9e4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     }
 </style>
-<div class="grid-container height-100 full">
+<div class="grid-container height-100-medium full">
     <div class="grid-y height-100 front-gradient" style=" background-size: cover">
         <div class="cell small-12">
             <div class="grid-x align-center-middle height-100 grid-padding-x">
                 <div class="cell medium-10 large-6">
                     <div class="text-white" style="padding: 3rem; background: rgba(0,0,0, 0.55)">
                         <h4 style="margin-bottom: 0">Courses in Ethereum; coding, dApps and tools</h4>
-                        <h1>Learn Ethereum. Join the decentralization trend.</h1>
+                        <h1>Learn Ethereum! Join the decentralization trend.</h1>
                     </div>
                 </div>
             </div>
@@ -62,7 +66,7 @@
     color: #fff;
 }
 </style>
-<div class="grid-container height-100">
+<div class="grid-container height-100-medium">
     <div class="grid-y height-100">
 
         <div class="cell small-2 align-bottom">
@@ -123,14 +127,11 @@
 <style>
     .dark-gradient {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,45484d+100 */
-        background: #000000; /* Old browsers */
-        background: -moz-radial-gradient(center, ellipse cover, #000000 0%, #45484d 100%); /* FF3.6-15 */
-        background: -webkit-radial-gradient(center, ellipse cover, #000000 0%,#45484d 100%); /* Chrome10-25,Safari5.1-6 */
-        background: radial-gradient(ellipse at center, #000000 0%,#45484d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        background-image: linear-gradient(45deg, rgba(0,0,0,0.85) 0%,rgba(28,28,33,0.92) 100%)
+        /*background-repeat: repeat, no-repeat;*/
     }
 </style>
-<div class="grid-container height-100 full dark-gradient text-white">
+<div class="grid-container height-100-medium full dark-gradient text-white">
     <div class="grid-x
                 grid-padding-x grid-padding-y
                 ">
@@ -151,7 +152,7 @@
 </div>
 
 
-<div class="grid-container height-100 full">
+<div class="grid-container height-100-medium full">
     <div class="grid-x
                 align-center-middle grid-padding-x
                 height-100">
@@ -159,7 +160,7 @@
             <h2><small>For professionals and </small> <strong>companies</strong></h2>
             <p>Explore the potential, get inspired, get prepared, go build for the future!</p>
             <p>
-                The workshops are design to take <strong>6 hours</strong>, 2 mentors, min. <strong>15</strong> participants.
+                The workshops are design to take <strong>6 hours</strong>, 2 mentors, min. <strong>10</strong> participants.
             </p>
             <p>
                 Simple pricing: <strong>EUR266 pr. participant.</strong>
@@ -193,30 +194,28 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fcff', endColorstr='#f7f7f7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     }
 </style>
-<div class="grid-container height-100 full very-light-gradient">
+<div class="grid-container height-100-medium full very-light-gradient">
     <div class="grid-x
                 align-center-middle
                 grid-padding-x height-100">
         <div class="cell medium-4">
-            <h2>About Us</h2>
-            <p>Well, currently all of this presented by me, Julian .. but it's an ongoing effort. </p>
+            <h2>About</h2>
+            <p>Well, currently all of this is presented by me, Julian .. but it's an ongoing effort. </p>
             <p>We're looking for funding!</p>
         </div>
 
         <div class="cell large-1"></div>
 
         <div class="cell medium-4">
-            <h2><small>Don't Hesitate To <br></small> Contact Us</h2>
+            <h2>Contact</h2>
             <p>
                 Email <a href="mailto:learn2018@studio42.dk">learn2018@studio42.dk</a><br>
-                Phone no <a href="" class="telephone"></a><br>
-                Telegram <a href="" class="telephone-tgm"></a><br>
+                Phone no <a href="#" class="telephone"></a><br>
+                Telegram <a href="#" class="telephone-tgm"></a><br>
                 <script async>
-                    localStorage.setItem("42","42") && document.querySelector('.telephone').setAttribute('href','tel:+4524413699')
-                    if (localStorage.getItem("42"))
+                    document.querySelector('.telephone').setAttribute('href','tel:+4524413699')
                     document.querySelector('.telephone').innerHTML = "+45 24413699"
-                    localStorage.setItem("42","42") && document.querySelector('.telephone-tgm').setAttribute('href','tel:+4524413699')
-                    if (localStorage.getItem("42"))
+                    document.querySelector('.telephone-tgm').setAttribute('href','tel:+4524413699')
                     document.querySelector('.telephone-tgm').innerHTML = "+45 24413699"
                 </script>
             </p>
