@@ -58,3 +58,6 @@ typings/
 .env
 
 package*
+
+# used for copying over from node_modules
+/vendor
